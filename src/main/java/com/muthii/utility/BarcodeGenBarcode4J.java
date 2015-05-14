@@ -23,7 +23,7 @@ import com.muthii.Interfaces.BarcodeGenIfc;
 
 /**
  * This implementation uses Barcode4J a similar implementation can be 
- * done using iText or some other barcode lirary
+ * done using iText or some other barcode library
  * @author Samnjugu
  *
  */
