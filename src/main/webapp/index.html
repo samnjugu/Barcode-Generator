@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Barcode App v0.1</title>  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/main.css"><!--   order matters last overrides previous -->
+  
+   
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Home</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav pull-right">		        
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#barForm">Barcodes</a></li>		            
+		          </ul>
+		        </li>
+		      </ul>		      		      
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+</nav>
+
+	</header>
+	<div class="row">		
+		<div class="col-sm-4">
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Enter Barcodes </h3>
+			  </div>
+			  <div class="panel-body">Barcode Type<select id="barType">
+                   <option>Barcode128</option><option>Codabar</option><option>BarcodeCode39</option><option>Interleaved2Of5</option><option>POSTNET</option>
+                   <option>UPCA</option><option>UPCE</option><option>EAN13</option><option>EAN8</option><option>QRcode</option>
+                </select></div>			  
+			  <div class="panel-body" id="barForm"></div>
+			  
+			</div>
+		</div>		
+		<div class="col-sm-6">
+			<!-- Display car Payment history-->
+			<div class="panel panel-info">
+			  <!-- Default panel contents -->
+			  <div class="panel-heading">Results Display</div>  
+			  <!-- Table -->
+			  <div id="results"></div>			  
+			</div>
+		</div>
+	</div>	
+	</div>	
+</body>
+	<script src="lib/jquery-2.1.1.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>	
+	<script src="lib/require.js" data-main="app/main.js?dev=' + Math.floor(Math.random() * 100) + "></script>
+</html>
