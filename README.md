@@ -1,5 +1,5 @@
 # Barcode-Generator
-A single page app generating barcodes as string instead of images
+A single page app for generating barcodes.
 
 Pre Requisites
 
